@@ -6,8 +6,8 @@
 |----------|------|-----------------|----------------|
 | Oil & Natural Gas | [oil-gas.md](./oil-gas.md) | 20M bpd disrupted (largest in history) | Strait of Hormuz |
 | Helium | [helium.md](./helium.md) | 33% of global supply offline | Qatar Ras Laffan |
-| Bromine | [bromine.md](./bromine.md) | 67% of global supply at risk | Israel/Jordan Dead Sea |
-| Sulphur | [sulphur.md](./sulphur.md) | 24-44% production, 50% seaborne trade | Strait of Hormuz |
+| Bromine | [bromine.md](./bromine.md) | 67% of global supply at risk | Israel/Jordan Dead Sea | **WRITTEN** |
+| Sulphur | [sulphur.md](./sulphur.md) | 24-44% production, 50% seaborne trade | Strait of Hormuz | **WRITTEN** |
 
 ## Tier 2: Secondary Cascades
 
@@ -20,7 +20,7 @@
 | Cobalt | [cobalt.md](./cobalt.md) | DRC quota cut 55% (pre-war) | Chinese processing 78% |
 | Copper | [copper.md](./copper.md) | 330,000 tonne deficit; Iran 7th producer | Sulphur for smelting |
 | Titanium | [titanium.md](./titanium.md) | Russia 60-80% of Western aerospace | Qualification 1yr+ |
-| Gallium/Germanium | [gallium-germanium.md](./gallium-germanium.md) | China 99%/83% production | Export ban suspension expires Nov 2026 |
+| Gallium/Germanium | [gallium-germanium.md](./gallium-germanium.md) | China 99%/83% production | Export ban suspension expires Nov 2026 | **WRITTEN** |
 
 ## Tier 3: Infrastructure Resources
 

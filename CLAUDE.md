@@ -118,6 +118,8 @@ From `blind-spots/analysis.md` — work through these systematically:
 | Date | Change | Files Affected | Why |
 |------|--------|---------------|-----|
 | 2026-03-23 | Initial brain creation | All 23 files | First comprehensive build from conversation research |
+| 2026-03-23 | Full brain architecture | CLAUDE.md | Intelligence layers, brain files, connections, propagation rules |
+| 2026-03-23 | Gap fill: conversation content captured | 9 new files | War overview, wild cards, supply exhaustion, Russia/China incentives, bromine, sulphur, gallium-germanium, defense industrial base, food agriculture |
 | | | | |
 
 ---
@@ -128,7 +130,7 @@ From `blind-spots/analysis.md` — work through these systematically:
 - `README.md` — Public-facing project description
 - `CLAUDE.md` — This file. Brain architecture and project instructions.
 
-### `/resources/` (7 files)
+### `/resources/` (10 files)
 - `00-resource-index.md` — Brain file: resource coverage index
 - `oil-gas.md` — Oil & natural gas: 20M bpd disruption, prices, pipelines, LNG, reserves
 - `helium.md` — 33% global supply offline; semiconductor fabrication dependency
@@ -148,15 +150,21 @@ From `blind-spots/analysis.md` — work through these systematically:
 - `european-union.md` — Second energy crisis, divided response, autonomy failure
 - `gulf-states.md` — Saudi, UAE, Qatar, Bahrain, Iraq, Turkey, Egypt, Jordan
 
-### `/industries/` (1 file)
+### `/industries/` (3 files)
 - `semiconductors-ai.md` — Triple input crisis, memory prices, TSMC vulnerability, data center attacks
+- `defense-industrial-base.md` — Munitions burn rate, production ramp, single-point failures, Ukraine competition
+- `food-agriculture.md` — Fertilizer shortage, crop yield timeline, water desalination, 1B+ at risk
 
 ### `/cascades/` (1 file)
 - `combinatorial-matrix.md` — Brain file: 5 major cascade models, meta-cascade (China)
 
-### `/simulation/` (2 files)
+### `/simulation/` (6 files)
 - `master-simulation.md` — Brain file: 4-phase prediction model, winners/losers
 - `incentive-map.md` — Brain file: every actor's wants/fears/actions
+- `war-overview.md` — Timeline of key events, day-by-day from Feb 25 to March 23
+- `iran-wild-cards.md` — 7 creative asymmetric scenarios Iran could pursue
+- `supply-exhaustion-analysis.md` — Can US/Israel deplete Iran's military? Analysis of conventional vs asymmetric
+- `russia-china-incentives.md` — Deep analysis of what Russia and China actually want from this war
 
 ### `/blind-spots/` (1 file)
 - `analysis.md` — Brain file: 6 categories of unmodeled risks
@@ -166,11 +174,9 @@ From `blind-spots/analysis.md` — work through these systematically:
 ## Missing Files (To Be Created)
 
 ### `/resources/` — Indexed but not yet written
-- `bromine.md`, `sulphur.md`, `lithium.md`, `cobalt.md`, `copper.md`, `titanium.md`, `gallium-germanium.md`, `uranium.md`, `neon.md`, `polyethylene.md`
+- `lithium.md`, `cobalt.md`, `copper.md`, `titanium.md`, `uranium.md`, `neon.md`, `polyethylene.md`
 
 ### `/industries/` — Referenced but not yet written
-- `defense-industrial-base.md`
-- `food-agriculture.md`
 - `automotive.md`
 - `energy-transition.md`
 
