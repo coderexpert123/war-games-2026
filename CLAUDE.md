@@ -120,6 +120,7 @@ From `blind-spots/analysis.md` — work through these systematically:
 | 2026-03-23 | Initial brain creation | All 23 files | First comprehensive build from conversation research |
 | 2026-03-23 | Full brain architecture | CLAUDE.md | Intelligence layers, brain files, connections, propagation rules |
 | 2026-03-23 | Gap fill: conversation content captured | 9 new files | War overview, wild cards, supply exhaustion, Russia/China incentives, bromine, sulphur, gallium-germanium, defense industrial base, food agriculture |
+| 2026-03-23 | Scenarios & opportunities document | scenarios-and-opportunities.md | 5 probability-weighted scenarios, structural shifts, 4-tier opportunity framework, key dates calendar |
 | | | | |
 
 ---
@@ -158,13 +159,14 @@ From `blind-spots/analysis.md` — work through these systematically:
 ### `/cascades/` (1 file)
 - `combinatorial-matrix.md` — Brain file: 5 major cascade models, meta-cascade (China)
 
-### `/simulation/` (6 files)
+### `/simulation/` (7 files)
 - `master-simulation.md` — Brain file: 4-phase prediction model, winners/losers
 - `incentive-map.md` — Brain file: every actor's wants/fears/actions
 - `war-overview.md` — Timeline of key events, day-by-day from Feb 25 to March 23
 - `iran-wild-cards.md` — 7 creative asymmetric scenarios Iran could pursue
 - `supply-exhaustion-analysis.md` — Can US/Israel deplete Iran's military? Analysis of conventional vs asymmetric
 - `russia-china-incentives.md` — Deep analysis of what Russia and China actually want from this war
+- `scenarios-and-opportunities.md` — **Brain file**: 5 scenarios with probabilities, structural shifts, economic opportunities matrix, key dates
 
 ### `/blind-spots/` (1 file)
 - `analysis.md` — Brain file: 6 categories of unmodeled risks
