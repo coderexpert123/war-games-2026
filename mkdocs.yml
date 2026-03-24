@@ -1,0 +1,126 @@
+site_name: "2026 Iran War: Geopolitical & Resource Cascade Analysis"
+site_description: "76-file geopolitical simulation built bottom-up from resource constraints. 18 resources, 18 countries, 20 cascade models, 5 scenarios."
+site_url: https://hrishirc.github.io/iran-war-2026-analysis/
+repo_url: https://github.com/hrishirc/iran-war-2026-analysis
+repo_name: hrishirc/iran-war-2026-analysis
+
+theme:
+  name: material
+  palette:
+    - scheme: slate
+      primary: deep orange
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - scheme: default
+      primary: deep orange
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - toc.integrate
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search
+
+markdown_extensions:
+  - tables
+  - admonitions
+  - pymdownx.details
+  - pymdownx.superfences
+  - toc:
+      permalink: true
+
+docs_dir: .
+
+nav:
+  - Home: README.md
+  - Simulation:
+    - Master Simulation: simulation/master-simulation.md
+    - Incentive Map: simulation/incentive-map.md
+    - Scenarios & Opportunities: simulation/scenarios-and-opportunities.md
+    - War Overview: simulation/war-overview.md
+    - War Termination Framework: simulation/war-termination-framework.md
+    - Iran Wild Cards: simulation/iran-wild-cards.md
+    - Supply Exhaustion Analysis: simulation/supply-exhaustion-analysis.md
+    - Russia-China Incentives: simulation/russia-china-incentives.md
+  - Cascade Models:
+    - Index: cascades/00-cascade-index.md
+    - Combinatorial Matrix: cascades/combinatorial-matrix.md
+    - November 2026 Convergence: cascades/november-2026-convergence.md
+    - China-Taiwan Window: cascades/china-taiwan-window.md
+    - Ukraine War Interaction: cascades/ukraine-war-interaction.md
+    - Water Crisis Model: cascades/water-crisis-model.md
+    - Cyber Escalation Scenarios: cascades/cyber-escalation-scenarios.md
+    - Nuclear Proliferation: cascades/nuclear-proliferation-cascade.md
+    - Global Financial Contagion: cascades/global-financial-contagion.md
+    - Insurance Systemic Risk: cascades/insurance-systemic-risk.md
+    - Maritime Chokepoint Network: cascades/maritime-chokepoint-network.md
+    - Yemen/Houthi/Red Sea: cascades/yemen-houthi-red-sea.md
+    - Migration & Remittances: cascades/migration-remittance-cascade.md
+    - Domestic Unrest Modeling: cascades/domestic-unrest-modeling.md
+    - Climate & Weather Compounding: cascades/climate-weather-compounding.md
+    - Health & Environmental Effects: cascades/health-environmental-effects.md
+    - Cryptocurrency & Alt Finance: cascades/cryptocurrency-alternative-finance.md
+    - Space & Satellite Vulnerability: cascades/space-satellite-vulnerability.md
+    - Information Warfare: cascades/information-warfare.md
+    - Sunni-Shia Dynamics: cascades/sunni-shia-dynamics.md
+  - Resources:
+    - Index: resources/00-resource-index.md
+    - Oil & Gas: resources/oil-gas.md
+    - Helium: resources/helium.md
+    - Rare Earths: resources/rare-earths.md
+    - Gallium & Germanium: resources/gallium-germanium.md
+    - Fertilizers: resources/fertilizers.md
+    - Uranium: resources/uranium.md
+    - Bromine: resources/bromine.md
+    - Sulphur: resources/sulphur.md
+    - Copper: resources/copper.md
+    - Titanium: resources/titanium.md
+    - Cobalt: resources/cobalt.md
+    - Lithium: resources/lithium.md
+    - Neon: resources/neon.md
+    - Polyethylene: resources/polyethylene.md
+    - Platinum Group Metals: resources/platinum-group-metals.md
+    - Munitions: resources/munitions.md
+    - Shipping & Insurance: resources/shipping-insurance.md
+    - Construction Materials: resources/construction-materials.md
+  - Countries & Regions:
+    - Index: countries/00-country-index.md
+    - United States: countries/united-states.md
+    - Israel: countries/israel.md
+    - Iran: countries/iran.md
+    - China: countries/china.md
+    - Russia: countries/russia.md
+    - India: countries/india.md
+    - European Union: countries/european-union.md
+    - Gulf States: countries/gulf-states.md
+    - Japan: countries/japan.md
+    - South Korea: countries/south-korea.md
+    - Turkey: countries/turkey.md
+    - Pakistan: countries/pakistan.md
+    - North Korea: countries/north-korea.md
+    - Southeast Asia: countries/southeast-asia.md
+    - Central Asia: countries/central-asia.md
+    - Africa: countries/africa.md
+    - Latin America: countries/latin-america.md
+    - Lebanon & Hezbollah: countries/lebanon-hezbollah.md
+  - Industries:
+    - Index: industries/00-industry-index.md
+    - Semiconductors & AI: industries/semiconductors-ai.md
+    - Defense Industrial Base: industries/defense-industrial-base.md
+    - Food & Agriculture: industries/food-agriculture.md
+    - Pharmaceuticals: industries/pharmaceuticals.md
+    - Automotive: industries/automotive.md
+    - Energy Transition: industries/energy-transition.md
+  - Blind Spots: blind-spots/analysis.md
