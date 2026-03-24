@@ -40,10 +40,9 @@ Every Gulf state faces the same paradox: benefit from US military protection but
 - Most collateral damage of any country
 
 ## Turkey
-- NATO downed 2 Iranian missiles over Turkish airspace (Gaziantep March 4, second March 9)
-- Condemned US strikes as "illegal"
-- **Not invoking NATO Article 4**
-- "Turkey wins more from NATO membership than it loses"
+> **Dedicated file**: See [countries/turkey.md](./turkey.md) for full analysis (NATO, Bosporus, Kurdish dimension, Bayraktar, Erdogan's calculus).
+
+Summary: NATO downed 2 Iranian missiles over Turkish airspace (Gaziantep March 4, second March 9). Condemned US strikes as "illegal." Not invoking NATO Article 4.
 
 ## Egypt
 - Suez Canal revenue dropped ~$10B
