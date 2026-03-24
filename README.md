@@ -2,6 +2,8 @@
 
 **76 files. 18 resources. 18 countries. 20 cascade models. 5 probability-weighted scenarios.**
 
+**[Chat with this research](https://notebooklm.google.com/notebook/4cf9474f-194d-4607-8953-8ee84a9e66e0)** | **[Browse the site](https://hrishirc.github.io/iran-war-2026-analysis/)**
+
 A bottom-up geopolitical simulation of the 2026 Iran War (US/Israel vs Iran, started Feb 28), built entirely from open-source intelligence. Unlike top-down political punditry, this analysis starts from physical resource constraints — oil flows, mineral supply chains, semiconductor inputs, food systems — and models how disruptions cascade across industries, countries, and each other simultaneously.
 
 Built using Claude as a network of parallel research agents, with each resource, country, and cascade analyzed independently, then integrated into a unified simulation.
