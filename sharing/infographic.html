@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iran War Resource Cascade Map</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #0a0a0f;
+            color: #ffffff;
+            width: 1200px;
+            height: 2000px;
+            padding: 40px;
+        }
+        .container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #ff6b35, #f7931a);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .header p {
+            font-size: 20px;
+            color: #888;
+        }
+
+        /* Chokepoint */
+        .chokepoint {
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            border: 2px solid #ff6b35;
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .chokepoint h2 {
+            font-size: 32px;
+            color: #ff6b35;
+            margin-bottom: 15px;
+        }
+        .chokepoint .big-number {
+            font-size: 72px;
+            font-weight: 700;
+            color: #ff6b35;
+        }
+        .chokepoint .sub {
+            font-size: 18px;
+            color: #aaa;
+        }
+
+        /* Resources Grid */
+        .resources-section {
+            margin-bottom: 30px;
+        }
+        .resources-section h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .resource-card {
+            background: #1a1a2e;
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+            border-left: 4px solid #ff6b35;
+        }
+        .resource-card h4 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+        .resource-card .number {
+            font-size: 48px;
+            font-weight: 700;
+            color: #ff6b35;
+            margin-bottom: 5px;
+        }
+        .resource-card .desc {
+            font-size: 14px;
+            color: #888;
+        }
+
+        /* Industry Impact */
+        .industry-section {
+            margin-bottom: 30px;
+        }
+        .industry-section h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .industry-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .industry-card {
+            background: #16213e;
+            border-radius: 15px;
+            padding: 25px;
+        }
+        .industry-card h4 {
+            font-size: 24px;
+            color: #4ecdc4;
+            margin-bottom: 10px;
+        }
+        .industry-card .impact {
+            font-size: 28px;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+        .industry-card .detail {
+            font-size: 14px;
+            color: #888;
+        }
+
+        /* Timeline */
+        .timeline-section {
+            margin-bottom: 30px;
+        }
+        .timeline-section h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .timeline {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            padding: 20px 0;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #ff6b35, #f7931a);
+        }
+        .timeline-item {
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+        .timeline-item .month {
+            font-size: 16px;
+            color: #ff6b35;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .timeline-item .event {
+            font-size: 14px;
+            color: #fff;
+            background: #1a1a2e;
+            padding: 10px;
+            border-radius: 10px;
+            width: 140px;
+        }
+
+        /* Winner */
+        .winner-section {
+            background: linear-gradient(135deg, #0d3b2c, #1a5a3c);
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            border: 2px solid #2ecc71;
+        }
+        .winner-section h3 {
+            font-size: 28px;
+            color: #2ecc71;
+            margin-bottom: 20px;
+        }
+        .winner-section .quote {
+            font-size: 32px;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+        .winner-section ul {
+            list-style: none;
+            font-size: 18px;
+            color: #aaa;
+            margin-bottom: 20px;
+        }
+        .winner-section li {
+            margin: 10px 0;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+        }
+        .footer p {
+            font-size: 14px;
+            color: #666;
+            margin: 5px 0;
+        }
+        .footer a {
+            color: #ff6b35;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>What Breaks When Hormuz Closes</h1>
+            <p>A Resource Cascade Map of the 2026 Iran War</p>
+        </div>
+
+        <!-- Chokepoint -->
+        <div class="chokepoint">
+            <h2>Strait of Hormuz</h2>
+            <div class="big-number">92%</div>
+            <div class="sub">traffic collapse &nbsp;•&nbsp; $1 insurance withdrawn = $390 trade frozen</div>
+        </div>
+
+        <!-- Resources -->
+        <div class="resources-section">
+            <h3>Resources Disrupted</h3>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <h4>Helium</h4>
+                    <div class="number">33%</div>
+                    <div class="desc">offline (Qatar)<br>Chip fabs, MRI, cryogenics</div>
+                </div>
+                <div class="resource-card">
+                    <h4>Oil</h4>
+                    <div class="number">20M</div>
+                    <div class="desc">bpd disrupted<br>Peak $119.50/bbl</div>
+                </div>
+                <div class="resource-card">
+                    <h4>Fertilizer</h4>
+                    <div class="number">⅓</div>
+                    <div class="desc">global trade<br>Food crisis locked in</div>
+                </div>
+                <div class="resource-card">
+                    <h4>Sulphur</h4>
+                    <div class="number">24-44%</div>
+                    <div class="desc">production disrupted<br>Copper smelting cascade</div>
+                </div>
+                <div class="resource-card">
+                    <h4>Polyethylene</h4>
+                    <div class="number">84%</div>
+                    <div class="desc">ME exports via Hormuz<br>Food packaging crisis</div>
+                </div>
+                <div class="resource-card">
+                    <h4>LNG</h4>
+                    <div class="number">17%</div>
+                    <div class="desc">global offline (Qatar)<br>Taiwan: 11 days reserve</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Industry Impact -->
+        <div class="industry-section">
+            <h3>Industry Cascades</h3>
+            <div class="industry-grid">
+                <div class="industry-card">
+                    <h4>SEMICONDUCORS</h4>
+                    <div class="impact">30-50% output cut</div>
+                    <div class="detail">Helium + Bromine + Neon disrupted simultaneously. No single fix.</div>
+                </div>
+                <div class="industry-card">
+                    <h4>FOOD</h4>
+                    <div class="impact">1B+ food insecure</div>
+                    <div class="detail">Spring planting happened with disrupted fertilizer. Q3-Q4 yields locked.</div>
+                </div>
+                <div class="industry-card">
+                    <h4>ENERGY</h4>
+                    <div class="impact">EU: 55-70% vs 90% target</div>
+                    <div class="detail">Winter gas storage crisis. Qatar offline 3-5 years.</div>
+                </div>
+                <div class="industry-card">
+                    <h4>AI INFRASTRUCTURE</h4>
+                    <div class="impact">$650B delayed 6-12mo</div>
+                    <div class="detail">Data centers redirecting to nuclear. Investment timeline repriced.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Timeline -->
+        <div class="timeline-section">
+            <h3>Prediction Timeline</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="month">LATE APRIL</div>
+                    <div class="event">Pharma cliff<br>60-day stocks exhaust</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="month">MAY-JUN</div>
+                    <div class="event">First harvest damage visible</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="month">JUL-AUG</div>
+                    <div class="event">Taiwan TSMC stress peak<br>11-day LNG clock</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="month">NOV 3</div>
+                    <div class="event">US Midterms<br>53% oppose war</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="month">NOV 27</div>
+                    <div class="event">China gallium ban<br>snaps back</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="month">DEC 1</div>
+                    <div class="event">EU gas storage<br>deadline</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Winner -->
+        <div class="winner-section">
+            <h3>THE WINNER</h3>
+            <div class="quote">"The US has aircraft carriers. China has the periodic table."</div>
+            <ul>
+                <li>✓ Controls rare earth processing</li>
+                <li>✓ 99% gallium, 83% germanium</li>
+                <li>✓ 78% cobalt refining</li>
+                <li>✓ Insulated from Hormuz</li>
+                <li>✓ Mediator position</li>
+            </ul>
+            <div style="font-size: 16px; color: #2ecc71;">The war's strategic winner never fires a shot.</div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p><strong>76 files. 18 resources. 18 countries. 20 cascade models.</strong></p>
+            <p>All open source. All sourced.</p>
+            <p>
+                <a href="https://hrishirc.github.io/iran-war-2026-analysis/">Browse Analysis</a> &nbsp;•&nbsp;
+                <a href="https://notebooklm.google.com/notebook/4cf9474f-194d-4607-8953-8ee84a9e66e0">Chat with Research</a> &nbsp;•&nbsp;
+                <a href="https://github.com/hrishirc/iran-war-2026-analysis">GitHub</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
