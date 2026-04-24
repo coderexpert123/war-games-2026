@@ -127,8 +127,8 @@ We dive into a 76-file AI-built simulation of the 2026 Iran War, modeling what h
 8:30 — Predictions with Dates
 
 **Links:**
-- Browse the analysis: https://hrishirc.github.io/iran-war-2026-analysis/
+- Browse the analysis: https://coderexpert123.github.io/iran-war-2026-analysis/
 - Chat with the research: https://notebooklm.google.com/notebook/4cf9474f-194d-4607-8953-8ee84a9e66e0
-- Source code: https://github.com/hrishirc/iran-war-2026-analysis
+- Source code: https://github.com/coderexpert123/iran-war-2026-analysis
 
 **Tags:** iran war 2026, geopolitics, supply chain, hormuz, china, resource cascade, ai simulation

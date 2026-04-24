@@ -207,9 +207,9 @@ This is [your name]. Thanks for watching.
 What happens when 18 critical resources break simultaneously? I built a 76-file geopolitical simulation to find out. The answer surprised me.
 
 **Links:**
-- Browse the analysis: https://hrishirc.github.io/iran-war-2026-analysis/
+- Browse the analysis: https://coderexpert123.github.io/iran-war-2026-analysis/
 - Chat with the research: https://notebooklm.google.com/notebook/4cf9474f-194d-4607-8953-8ee84a9e66e0
-- Source code: https://github.com/hrishirc/iran-war-2026-analysis
+- Source code: https://github.com/coderexpert123/iran-war-2026-analysis
 
 **Timestamps:**
 0:00 — The winner isn't who you think
